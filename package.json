@@ -1,0 +1,49 @@
+{
+  "name": "jungle-backend",
+  "version": "1.0.0",
+  "description": "Jungle backend",
+  "main": "src/index.js",
+  "bin": {
+    "jungle-backend/create-project": "bin/create-project",
+    "create-project": "bin/create-project"
+  },
+  "scripts": {
+    "start": "nodemon --watch src src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wisdom132/jungle-backend.git"
+  },
+  "author": "Wisdom Ekpot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wisdom132/jungle-backend/issues"
+  },
+  "homepage": "https://github.com/Wisdom132/jungle-backend#readme",
+  "dependencies": {
+    "arg": "^4.1.3",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "commander": "^5.0.0",
+    "content-disposition": "^0.5.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "inquirer": "^7.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.5",
+    "morgan": "^1.10.0",
+    "save": "^2.4.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint-config-fortech": "^2.0.2"
+  }
+}

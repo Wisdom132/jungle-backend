@@ -1,0 +1,3 @@
+{"message":"Info message","level":"info"}
+{"message":"Warning message","level":"warn"}
+{"message":"App is running on 5000","level":"info"}
