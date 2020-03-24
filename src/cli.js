@@ -28,7 +28,6 @@ export const cli =  (args)=> {
             .then(answers => {
             let route = path.join(process.cwd() + `/src/app/${answers.module_name}`); 
             fs.mkdir(route,()=> {
-               
                fs.writeFile(route+"/index.js",'//Hello Node.js', 'utf8', ()=> {
                    console.log("hewvhew")
                })

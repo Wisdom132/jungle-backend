@@ -2,7 +2,7 @@ const config = require( "./index" );
 const mongoose = require( "mongoose" );
 
 module.exports = function( app ) {
-    mongoose.connect( config.mongoUrl ,{ useUnifiedTopology: true ,useNewUrlParser: true});
+    mongoose.connect( config.mongoUrl ,{ useUnifiedTopology: true ,useNewUrlParser: true})
     mongoose.Promise = global.Promise;
 
     process.on( "SIGINT", cleanup );
