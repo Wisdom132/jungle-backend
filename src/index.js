@@ -20,6 +20,7 @@ app.use( customResponses );
 
 
 require( "./config/mongoose" )( app );
+require( "./app" )( app );
 
 app.use( ( req, res ) => {
     res.notFound( );
