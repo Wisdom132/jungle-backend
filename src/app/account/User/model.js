@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+var uniqueValidator = require('mongoose-unique-validator');
+
 const bcrypt = require("bcrypt");
 const Schema = mongoose.Schema;
 
@@ -12,9 +14,14 @@ const userSchema = new Schema({
         type:String,
         required:true
     },
+    phone_number: {
+        type:String,
+        required:true
+    },
     email:{
          type:String,
-        required:true
+         required:true,
+         unique:true
     },
     isVerified: {
         type:Boolean,
@@ -41,18 +48,10 @@ const userSchema = new Schema({
 });
 
 
-userSchema.methods.hashPassword =  (password) => {
-    return bcrypt.hashSync(password, 10);
+userSchema.methods.hashPassword = async (password) => {
+    return await bcrypt.hashSync(password, 10);
 }
 
-userSchema.methods.getUserByEmail = (model,email, callback) => {
-  const query = {
-    email: email
-  };
- model.find(query, callback);
-};
-
- module.exports = mongoose.model( "User", userSchema );
-
-
+module.exports = mongoose.model( "User", userSchema );
+userSchema.plugin(uniqueValidator,{ message: '{PATH} Already in use' });
 
