@@ -25,8 +25,8 @@ const logger = new ( winston.Logger )({
     ],
 } );
 
-logger.info( "Info message" );
-logger.warn( "Warning message" );
-logger.debug( "Debugging info" );
+// logger.info( "Info message" );
+// logger.warn( "Warning message" );
+// logger.debug( "Debugging info" );
 
 module.exports = logger;

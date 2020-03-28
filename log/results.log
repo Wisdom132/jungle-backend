@@ -1205,3 +1205,498 @@
 {"level":"warn","message":"Warning message","timestamp":"21:48:34"}
 {"level":"debug","message":"Debugging info","timestamp":"21:48:34"}
 {"level":"info","message":"App is running on 5000","timestamp":"21:48:35"}
+{"level":"info","message":"Info message","timestamp":"14:52:11"}
+{"level":"warn","message":"Warning message","timestamp":"14:52:11"}
+{"level":"debug","message":"Debugging info","timestamp":"14:52:11"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:52:42"}
+{"level":"info","message":"Info message","timestamp":"15:06:50"}
+{"level":"warn","message":"Warning message","timestamp":"15:06:50"}
+{"level":"debug","message":"Debugging info","timestamp":"15:06:50"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:06:56"}
+{"level":"info","message":"Info message","timestamp":"15:08:12"}
+{"level":"warn","message":"Warning message","timestamp":"15:08:12"}
+{"level":"debug","message":"Debugging info","timestamp":"15:08:12"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:08:18"}
+{"level":"info","message":"Info message","timestamp":"15:08:36"}
+{"level":"warn","message":"Warning message","timestamp":"15:08:36"}
+{"level":"debug","message":"Debugging info","timestamp":"15:08:36"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:08:44"}
+{"level":"info","message":"Info message","timestamp":"15:09:32"}
+{"level":"warn","message":"Warning message","timestamp":"15:09:32"}
+{"level":"debug","message":"Debugging info","timestamp":"15:09:32"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:09:37"}
+{"level":"info","message":"Info message","timestamp":"15:10:26"}
+{"level":"warn","message":"Warning message","timestamp":"15:10:26"}
+{"level":"debug","message":"Debugging info","timestamp":"15:10:26"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:10:32"}
+{"level":"info","message":"Info message","timestamp":"15:13:53"}
+{"level":"warn","message":"Warning message","timestamp":"15:13:53"}
+{"level":"debug","message":"Debugging info","timestamp":"15:13:53"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:14:02"}
+{"level":"info","message":"Info message","timestamp":"15:14:34"}
+{"level":"warn","message":"Warning message","timestamp":"15:14:34"}
+{"level":"debug","message":"Debugging info","timestamp":"15:14:34"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:14:40"}
+{"level":"info","message":"Info message","timestamp":"15:14:47"}
+{"level":"warn","message":"Warning message","timestamp":"15:14:47"}
+{"level":"debug","message":"Debugging info","timestamp":"15:14:47"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:14:48"}
+{"level":"info","message":"Info message","timestamp":"15:14:55"}
+{"level":"warn","message":"Warning message","timestamp":"15:14:55"}
+{"level":"debug","message":"Debugging info","timestamp":"15:14:55"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:14:56"}
+{"level":"info","message":"Info message","timestamp":"15:29:04"}
+{"level":"warn","message":"Warning message","timestamp":"15:29:04"}
+{"level":"debug","message":"Debugging info","timestamp":"15:29:04"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:29:16"}
+{"level":"info","message":"Info message","timestamp":"15:29:23"}
+{"level":"warn","message":"Warning message","timestamp":"15:29:23"}
+{"level":"debug","message":"Debugging info","timestamp":"15:29:23"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:29:38"}
+{"level":"info","message":"Info message","timestamp":"15:29:56"}
+{"level":"warn","message":"Warning message","timestamp":"15:29:56"}
+{"level":"debug","message":"Debugging info","timestamp":"15:29:56"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:30:22"}
+{"level":"info","message":"Info message","timestamp":"15:33:25"}
+{"level":"warn","message":"Warning message","timestamp":"15:33:25"}
+{"level":"debug","message":"Debugging info","timestamp":"15:33:25"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:33:31"}
+{"level":"info","message":"Info message","timestamp":"15:35:24"}
+{"level":"warn","message":"Warning message","timestamp":"15:35:24"}
+{"level":"debug","message":"Debugging info","timestamp":"15:35:24"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:35:29"}
+{"level":"info","message":"Info message","timestamp":"15:35:56"}
+{"level":"warn","message":"Warning message","timestamp":"15:35:56"}
+{"level":"debug","message":"Debugging info","timestamp":"15:35:56"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:36:01"}
+{"level":"info","message":"Info message","timestamp":"15:36:15"}
+{"level":"warn","message":"Warning message","timestamp":"15:36:15"}
+{"level":"debug","message":"Debugging info","timestamp":"15:36:15"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:36:21"}
+{"level":"info","message":"Info message","timestamp":"15:50:35"}
+{"level":"warn","message":"Warning message","timestamp":"15:50:35"}
+{"level":"debug","message":"Debugging info","timestamp":"15:50:35"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:50:43"}
+{"level":"info","message":"Info message","timestamp":"15:51:19"}
+{"level":"warn","message":"Warning message","timestamp":"15:51:19"}
+{"level":"debug","message":"Debugging info","timestamp":"15:51:19"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:51:19"}
+{"level":"info","message":"Info message","timestamp":"15:53:01"}
+{"level":"warn","message":"Warning message","timestamp":"15:53:01"}
+{"level":"debug","message":"Debugging info","timestamp":"15:53:01"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:53:06"}
+{"level":"info","message":"Info message","timestamp":"15:54:01"}
+{"level":"warn","message":"Warning message","timestamp":"15:54:01"}
+{"level":"debug","message":"Debugging info","timestamp":"15:54:01"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:54:02"}
+{"level":"info","message":"Info message","timestamp":"15:55:42"}
+{"level":"warn","message":"Warning message","timestamp":"15:55:42"}
+{"level":"debug","message":"Debugging info","timestamp":"15:55:42"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:55:42"}
+{"level":"info","message":"Info message","timestamp":"15:57:56"}
+{"level":"warn","message":"Warning message","timestamp":"15:57:56"}
+{"level":"debug","message":"Debugging info","timestamp":"15:57:56"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:57:57"}
+{"level":"info","message":"Info message","timestamp":"15:58:07"}
+{"level":"warn","message":"Warning message","timestamp":"15:58:07"}
+{"level":"debug","message":"Debugging info","timestamp":"15:58:07"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:58:08"}
+{"level":"info","message":"Info message","timestamp":"15:58:17"}
+{"level":"warn","message":"Warning message","timestamp":"15:58:17"}
+{"level":"debug","message":"Debugging info","timestamp":"15:58:17"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:58:17"}
+{"level":"info","message":"Info message","timestamp":"15:58:28"}
+{"level":"warn","message":"Warning message","timestamp":"15:58:28"}
+{"level":"debug","message":"Debugging info","timestamp":"15:58:28"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:58:29"}
+{"level":"info","message":"Info message","timestamp":"15:59:08"}
+{"level":"warn","message":"Warning message","timestamp":"15:59:08"}
+{"level":"debug","message":"Debugging info","timestamp":"15:59:08"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:59:09"}
+{"level":"info","message":"Info message","timestamp":"15:59:34"}
+{"level":"warn","message":"Warning message","timestamp":"15:59:34"}
+{"level":"debug","message":"Debugging info","timestamp":"15:59:34"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:59:35"}
+{"level":"info","message":"Info message","timestamp":"15:59:43"}
+{"level":"warn","message":"Warning message","timestamp":"15:59:43"}
+{"level":"debug","message":"Debugging info","timestamp":"15:59:43"}
+{"level":"info","message":"App is running on 5000","timestamp":"15:59:43"}
+{"level":"info","message":"Info message","timestamp":"16:00:11"}
+{"level":"warn","message":"Warning message","timestamp":"16:00:11"}
+{"level":"debug","message":"Debugging info","timestamp":"16:00:11"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:00:12"}
+{"level":"info","message":"Info message","timestamp":"16:07:03"}
+{"level":"warn","message":"Warning message","timestamp":"16:07:03"}
+{"level":"debug","message":"Debugging info","timestamp":"16:07:03"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:07:03"}
+{"level":"info","message":"Info message","timestamp":"16:09:01"}
+{"level":"warn","message":"Warning message","timestamp":"16:09:01"}
+{"level":"debug","message":"Debugging info","timestamp":"16:09:01"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:09:15"}
+{"level":"info","message":"Info message","timestamp":"16:10:18"}
+{"level":"warn","message":"Warning message","timestamp":"16:10:18"}
+{"level":"debug","message":"Debugging info","timestamp":"16:10:18"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:10:25"}
+{"level":"info","message":"Info message","timestamp":"16:11:48"}
+{"level":"warn","message":"Warning message","timestamp":"16:11:48"}
+{"level":"debug","message":"Debugging info","timestamp":"16:11:48"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:11:53"}
+{"level":"info","message":"Info message","timestamp":"16:12:26"}
+{"level":"warn","message":"Warning message","timestamp":"16:12:26"}
+{"level":"debug","message":"Debugging info","timestamp":"16:12:26"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:12:27"}
+{"level":"info","message":"Info message","timestamp":"16:13:39"}
+{"level":"warn","message":"Warning message","timestamp":"16:13:39"}
+{"level":"debug","message":"Debugging info","timestamp":"16:13:39"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:13:43"}
+{"level":"info","message":"Info message","timestamp":"16:14:06"}
+{"level":"warn","message":"Warning message","timestamp":"16:14:06"}
+{"level":"debug","message":"Debugging info","timestamp":"16:14:06"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:14:06"}
+{"level":"info","message":"Info message","timestamp":"16:14:38"}
+{"level":"warn","message":"Warning message","timestamp":"16:14:38"}
+{"level":"debug","message":"Debugging info","timestamp":"16:14:38"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:14:43"}
+{"level":"info","message":"Info message","timestamp":"16:15:42"}
+{"level":"warn","message":"Warning message","timestamp":"16:15:42"}
+{"level":"debug","message":"Debugging info","timestamp":"16:15:42"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:15:43"}
+{"level":"info","message":"Info message","timestamp":"16:16:45"}
+{"level":"warn","message":"Warning message","timestamp":"16:16:45"}
+{"level":"debug","message":"Debugging info","timestamp":"16:16:45"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:16:53"}
+{"level":"info","message":"Info message","timestamp":"16:18:44"}
+{"level":"warn","message":"Warning message","timestamp":"16:18:44"}
+{"level":"debug","message":"Debugging info","timestamp":"16:18:44"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:18:50"}
+{"level":"info","message":"Info message","timestamp":"16:19:28"}
+{"level":"warn","message":"Warning message","timestamp":"16:19:28"}
+{"level":"debug","message":"Debugging info","timestamp":"16:19:28"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:19:33"}
+{"level":"info","message":"Info message","timestamp":"16:19:51"}
+{"level":"warn","message":"Warning message","timestamp":"16:19:51"}
+{"level":"debug","message":"Debugging info","timestamp":"16:19:51"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:19:59"}
+{"level":"info","message":"Info message","timestamp":"16:21:03"}
+{"level":"warn","message":"Warning message","timestamp":"16:21:03"}
+{"level":"debug","message":"Debugging info","timestamp":"16:21:03"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:21:08"}
+{"level":"info","message":"Info message","timestamp":"16:21:58"}
+{"level":"warn","message":"Warning message","timestamp":"16:21:58"}
+{"level":"debug","message":"Debugging info","timestamp":"16:21:58"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:22:07"}
+{"level":"info","message":"Info message","timestamp":"16:26:38"}
+{"level":"warn","message":"Warning message","timestamp":"16:26:38"}
+{"level":"debug","message":"Debugging info","timestamp":"16:26:38"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:26:44"}
+{"level":"info","message":"Info message","timestamp":"16:28:00"}
+{"level":"warn","message":"Warning message","timestamp":"16:28:00"}
+{"level":"debug","message":"Debugging info","timestamp":"16:28:00"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:28:00"}
+{"level":"info","message":"Info message","timestamp":"16:29:01"}
+{"level":"warn","message":"Warning message","timestamp":"16:29:01"}
+{"level":"debug","message":"Debugging info","timestamp":"16:29:01"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:29:02"}
+{"level":"info","message":"Info message","timestamp":"16:29:41"}
+{"level":"warn","message":"Warning message","timestamp":"16:29:41"}
+{"level":"debug","message":"Debugging info","timestamp":"16:29:41"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:29:42"}
+{"level":"info","message":"Info message","timestamp":"16:30:14"}
+{"level":"warn","message":"Warning message","timestamp":"16:30:14"}
+{"level":"debug","message":"Debugging info","timestamp":"16:30:14"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:30:15"}
+{"level":"info","message":"Info message","timestamp":"16:30:18"}
+{"level":"warn","message":"Warning message","timestamp":"16:30:18"}
+{"level":"debug","message":"Debugging info","timestamp":"16:30:18"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:30:19"}
+{"level":"info","message":"Info message","timestamp":"16:32:16"}
+{"level":"warn","message":"Warning message","timestamp":"16:32:16"}
+{"level":"debug","message":"Debugging info","timestamp":"16:32:16"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:32:17"}
+{"level":"info","message":"Info message","timestamp":"16:32:32"}
+{"level":"warn","message":"Warning message","timestamp":"16:32:32"}
+{"level":"debug","message":"Debugging info","timestamp":"16:32:32"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:32:33"}
+{"level":"info","message":"Info message","timestamp":"16:33:26"}
+{"level":"warn","message":"Warning message","timestamp":"16:33:26"}
+{"level":"debug","message":"Debugging info","timestamp":"16:33:26"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:33:27"}
+{"level":"info","message":"Info message","timestamp":"16:33:57"}
+{"level":"warn","message":"Warning message","timestamp":"16:33:57"}
+{"level":"debug","message":"Debugging info","timestamp":"16:33:57"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:33:58"}
+{"level":"info","message":"Info message","timestamp":"16:34:18"}
+{"level":"warn","message":"Warning message","timestamp":"16:34:18"}
+{"level":"debug","message":"Debugging info","timestamp":"16:34:18"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:34:19"}
+{"level":"info","message":"Info message","timestamp":"16:41:48"}
+{"level":"warn","message":"Warning message","timestamp":"16:41:48"}
+{"level":"debug","message":"Debugging info","timestamp":"16:41:48"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:41:49"}
+{"level":"info","message":"Info message","timestamp":"16:44:21"}
+{"level":"warn","message":"Warning message","timestamp":"16:44:21"}
+{"level":"debug","message":"Debugging info","timestamp":"16:44:21"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:44:22"}
+{"level":"info","message":"Info message","timestamp":"16:44:33"}
+{"level":"warn","message":"Warning message","timestamp":"16:44:33"}
+{"level":"debug","message":"Debugging info","timestamp":"16:44:33"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:44:34"}
+{"level":"info","message":"Info message","timestamp":"16:46:55"}
+{"level":"warn","message":"Warning message","timestamp":"16:46:55"}
+{"level":"debug","message":"Debugging info","timestamp":"16:46:55"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:46:56"}
+{"level":"info","message":"Info message","timestamp":"16:47:55"}
+{"level":"warn","message":"Warning message","timestamp":"16:47:55"}
+{"level":"debug","message":"Debugging info","timestamp":"16:47:55"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:47:55"}
+{"level":"info","message":"Info message","timestamp":"16:49:15"}
+{"level":"warn","message":"Warning message","timestamp":"16:49:15"}
+{"level":"debug","message":"Debugging info","timestamp":"16:49:15"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:49:16"}
+{"level":"info","message":"Info message","timestamp":"16:49:23"}
+{"level":"warn","message":"Warning message","timestamp":"16:49:23"}
+{"level":"debug","message":"Debugging info","timestamp":"16:49:23"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:49:25"}
+{"level":"info","message":"Info message","timestamp":"16:49:32"}
+{"level":"warn","message":"Warning message","timestamp":"16:49:32"}
+{"level":"debug","message":"Debugging info","timestamp":"16:49:32"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:49:33"}
+{"level":"info","message":"Info message","timestamp":"16:52:23"}
+{"level":"warn","message":"Warning message","timestamp":"16:52:23"}
+{"level":"debug","message":"Debugging info","timestamp":"16:52:23"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:52:28"}
+{"level":"info","message":"Info message","timestamp":"16:53:44"}
+{"level":"warn","message":"Warning message","timestamp":"16:53:44"}
+{"level":"debug","message":"Debugging info","timestamp":"16:53:44"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:53:45"}
+{"level":"info","message":"Info message","timestamp":"16:58:02"}
+{"level":"warn","message":"Warning message","timestamp":"16:58:02"}
+{"level":"debug","message":"Debugging info","timestamp":"16:58:02"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:58:08"}
+{"level":"info","message":"Info message","timestamp":"16:59:02"}
+{"level":"warn","message":"Warning message","timestamp":"16:59:02"}
+{"level":"debug","message":"Debugging info","timestamp":"16:59:02"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:59:03"}
+{"level":"info","message":"Info message","timestamp":"16:59:09"}
+{"level":"warn","message":"Warning message","timestamp":"16:59:09"}
+{"level":"debug","message":"Debugging info","timestamp":"16:59:09"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:59:09"}
+{"level":"info","message":"Info message","timestamp":"16:59:45"}
+{"level":"warn","message":"Warning message","timestamp":"16:59:45"}
+{"level":"debug","message":"Debugging info","timestamp":"16:59:45"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:59:47"}
+{"level":"info","message":"Info message","timestamp":"17:00:13"}
+{"level":"warn","message":"Warning message","timestamp":"17:00:13"}
+{"level":"debug","message":"Debugging info","timestamp":"17:00:13"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:00:14"}
+{"level":"info","message":"Info message","timestamp":"17:00:35"}
+{"level":"warn","message":"Warning message","timestamp":"17:00:35"}
+{"level":"debug","message":"Debugging info","timestamp":"17:00:35"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:00:36"}
+{"level":"info","message":"Info message","timestamp":"17:02:34"}
+{"level":"warn","message":"Warning message","timestamp":"17:02:34"}
+{"level":"debug","message":"Debugging info","timestamp":"17:02:34"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:02:35"}
+{"level":"info","message":"Info message","timestamp":"17:03:02"}
+{"level":"warn","message":"Warning message","timestamp":"17:03:02"}
+{"level":"debug","message":"Debugging info","timestamp":"17:03:02"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:03:03"}
+{"level":"info","message":"Info message","timestamp":"17:03:19"}
+{"level":"warn","message":"Warning message","timestamp":"17:03:19"}
+{"level":"debug","message":"Debugging info","timestamp":"17:03:19"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:03:19"}
+{"level":"info","message":"Info message","timestamp":"17:03:30"}
+{"level":"warn","message":"Warning message","timestamp":"17:03:30"}
+{"level":"debug","message":"Debugging info","timestamp":"17:03:30"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:03:31"}
+{"level":"info","message":"Info message","timestamp":"17:04:05"}
+{"level":"warn","message":"Warning message","timestamp":"17:04:05"}
+{"level":"debug","message":"Debugging info","timestamp":"17:04:05"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:04:06"}
+{"level":"info","message":"Info message","timestamp":"17:04:25"}
+{"level":"warn","message":"Warning message","timestamp":"17:04:25"}
+{"level":"debug","message":"Debugging info","timestamp":"17:04:25"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:04:26"}
+{"level":"info","message":"Info message","timestamp":"17:25:24"}
+{"level":"warn","message":"Warning message","timestamp":"17:25:24"}
+{"level":"debug","message":"Debugging info","timestamp":"17:25:24"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:25:31"}
+{"level":"info","message":"Info message","timestamp":"17:26:26"}
+{"level":"warn","message":"Warning message","timestamp":"17:26:26"}
+{"level":"debug","message":"Debugging info","timestamp":"17:26:26"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:26:27"}
+{"level":"info","message":"Info message","timestamp":"17:28:40"}
+{"level":"warn","message":"Warning message","timestamp":"17:28:40"}
+{"level":"debug","message":"Debugging info","timestamp":"17:28:40"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:28:45"}
+{"level":"info","message":"Info message","timestamp":"17:36:59"}
+{"level":"warn","message":"Warning message","timestamp":"17:36:59"}
+{"level":"debug","message":"Debugging info","timestamp":"17:36:59"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:37:08"}
+{"level":"info","message":"Info message","timestamp":"17:37:40"}
+{"level":"warn","message":"Warning message","timestamp":"17:37:40"}
+{"level":"debug","message":"Debugging info","timestamp":"17:37:40"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:37:41"}
+{"level":"info","message":"Info message","timestamp":"14:09:05"}
+{"level":"warn","message":"Warning message","timestamp":"14:09:05"}
+{"level":"debug","message":"Debugging info","timestamp":"14:09:05"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:09:11"}
+{"level":"info","message":"Info message","timestamp":"14:13:10"}
+{"level":"warn","message":"Warning message","timestamp":"14:13:10"}
+{"level":"debug","message":"Debugging info","timestamp":"14:13:10"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:13:16"}
+{"level":"info","message":"Info message","timestamp":"14:13:49"}
+{"level":"warn","message":"Warning message","timestamp":"14:13:49"}
+{"level":"debug","message":"Debugging info","timestamp":"14:13:49"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:13:59"}
+{"level":"info","message":"Info message","timestamp":"14:15:16"}
+{"level":"warn","message":"Warning message","timestamp":"14:15:16"}
+{"level":"debug","message":"Debugging info","timestamp":"14:15:16"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:15:23"}
+{"level":"info","message":"Info message","timestamp":"14:18:21"}
+{"level":"warn","message":"Warning message","timestamp":"14:18:21"}
+{"level":"debug","message":"Debugging info","timestamp":"14:18:21"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:18:28"}
+{"level":"info","message":"Info message","timestamp":"14:18:34"}
+{"level":"warn","message":"Warning message","timestamp":"14:18:34"}
+{"level":"debug","message":"Debugging info","timestamp":"14:18:34"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:18:37"}
+{"level":"info","message":"Info message","timestamp":"14:18:59"}
+{"level":"warn","message":"Warning message","timestamp":"14:18:59"}
+{"level":"debug","message":"Debugging info","timestamp":"14:18:59"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:19:03"}
+{"level":"info","message":"Info message","timestamp":"14:19:28"}
+{"level":"warn","message":"Warning message","timestamp":"14:19:28"}
+{"level":"debug","message":"Debugging info","timestamp":"14:19:28"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:19:31"}
+{"level":"info","message":"Info message","timestamp":"14:19:48"}
+{"level":"warn","message":"Warning message","timestamp":"14:19:48"}
+{"level":"debug","message":"Debugging info","timestamp":"14:19:48"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:19:49"}
+{"level":"info","message":"Info message","timestamp":"14:20:51"}
+{"level":"warn","message":"Warning message","timestamp":"14:20:51"}
+{"level":"debug","message":"Debugging info","timestamp":"14:20:51"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:20:53"}
+{"level":"info","message":"Info message","timestamp":"14:21:39"}
+{"level":"warn","message":"Warning message","timestamp":"14:21:39"}
+{"level":"debug","message":"Debugging info","timestamp":"14:21:39"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:21:41"}
+{"level":"info","message":"Info message","timestamp":"14:22:09"}
+{"level":"warn","message":"Warning message","timestamp":"14:22:09"}
+{"level":"debug","message":"Debugging info","timestamp":"14:22:09"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:22:11"}
+{"level":"info","message":"Info message","timestamp":"14:22:33"}
+{"level":"warn","message":"Warning message","timestamp":"14:22:33"}
+{"level":"debug","message":"Debugging info","timestamp":"14:22:33"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:22:35"}
+{"level":"info","message":"Info message","timestamp":"14:22:58"}
+{"level":"warn","message":"Warning message","timestamp":"14:22:58"}
+{"level":"debug","message":"Debugging info","timestamp":"14:22:58"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:22:59"}
+{"level":"info","message":"Info message","timestamp":"14:24:07"}
+{"level":"warn","message":"Warning message","timestamp":"14:24:07"}
+{"level":"debug","message":"Debugging info","timestamp":"14:24:07"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:24:09"}
+{"level":"info","message":"Info message","timestamp":"14:28:13"}
+{"level":"warn","message":"Warning message","timestamp":"14:28:13"}
+{"level":"debug","message":"Debugging info","timestamp":"14:28:13"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:28:15"}
+{"level":"info","message":"Info message","timestamp":"14:34:17"}
+{"level":"warn","message":"Warning message","timestamp":"14:34:17"}
+{"level":"debug","message":"Debugging info","timestamp":"14:34:17"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:34:21"}
+{"level":"info","message":"Info message","timestamp":"14:37:10"}
+{"level":"warn","message":"Warning message","timestamp":"14:37:10"}
+{"level":"debug","message":"Debugging info","timestamp":"14:37:10"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:37:12"}
+{"level":"info","message":"Info message","timestamp":"14:37:14"}
+{"level":"warn","message":"Warning message","timestamp":"14:37:14"}
+{"level":"debug","message":"Debugging info","timestamp":"14:37:14"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:37:15"}
+{"level":"info","message":"Info message","timestamp":"14:37:29"}
+{"level":"warn","message":"Warning message","timestamp":"14:37:29"}
+{"level":"debug","message":"Debugging info","timestamp":"14:37:29"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:37:30"}
+{"level":"info","message":"Info message","timestamp":"14:37:40"}
+{"level":"warn","message":"Warning message","timestamp":"14:37:40"}
+{"level":"debug","message":"Debugging info","timestamp":"14:37:40"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:37:41"}
+{"level":"info","message":"Info message","timestamp":"14:38:06"}
+{"level":"warn","message":"Warning message","timestamp":"14:38:06"}
+{"level":"debug","message":"Debugging info","timestamp":"14:38:06"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:38:06"}
+{"$__":{"strictMode":true,"inserting":true,"getters":{"location":{"street":"ibb","city":"uyo","state":"akwa"}},"_id":{"_bsontype":"ObjectID","id":{"0":94,"1":124,"2":176,"3":83,"4":8,"5":11,"6":243,"7":11,"8":250,"9":223,"10":238,"11":117}},"wasPopulated":false,"scope":{"$ref":"$"},"activePaths":{"paths":{"location.state":"require","location.city":"require","location.street":"require","username":"require","email":"require","phone_number":"require","password":"require","name":"require"},"states":{"ignore":{},"default":{},"init":{},"modify":{},"require":{"location.state":true,"location.city":true,"location.street":true,"username":true,"email":true,"phone_number":true,"password":true,"name":true}},"stateNames":["require","modify","init","default","ignore"]},"pathsToScopes":{},"cachedRequired":{},"session":null,"$setCalled":{},"emitter":{"_events":{},"_eventsCount":0,"_maxListeners":0},"$options":{},"validating":null,"nestedPath":"location"},"isNew":false,"_doc":{"isVerified":false,"_id":{"$ref":"$[\"$__\"][\"_id\"]"},"name":"Wisdom Ekpot","email":"ekpotwisdom@gmail.com","phone_number":"08096650047","username":"Wisdom","location":{"street":"ibb","city":"uyo","state":"akwa"},"password":"$2b$10$Ps2UA5BVAjVPWJSXF30q4eYTUQY31y78TP/zTSzFlKQSNWZG0KO7u","createdAt":"2020-03-26T13:38:27.764Z","updatedAt":"2020-03-26T13:38:27.764Z","__v":0},"$locals":{},"$op":null,"level":"info","message":"","timestamp":"14:38:27"}
+{"level":"info","message":"Info message","timestamp":"14:38:42"}
+{"level":"warn","message":"Warning message","timestamp":"14:38:42"}
+{"level":"debug","message":"Debugging info","timestamp":"14:38:42"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:38:43"}
+{"level":"info","message":"Info message","timestamp":"14:39:44"}
+{"level":"warn","message":"Warning message","timestamp":"14:39:44"}
+{"level":"debug","message":"Debugging info","timestamp":"14:39:44"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:39:45"}
+{"level":"info","message":"Info message","timestamp":"14:56:42"}
+{"level":"warn","message":"Warning message","timestamp":"14:56:42"}
+{"level":"debug","message":"Debugging info","timestamp":"14:56:42"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:56:51"}
+{"level":"info","message":"Info message","timestamp":"14:57:25"}
+{"level":"warn","message":"Warning message","timestamp":"14:57:25"}
+{"level":"debug","message":"Debugging info","timestamp":"14:57:25"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:57:30"}
+{"level":"info","message":"Info message","timestamp":"14:57:59"}
+{"level":"warn","message":"Warning message","timestamp":"14:57:59"}
+{"level":"debug","message":"Debugging info","timestamp":"14:57:59"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:58:07"}
+{"level":"info","message":"App is running on 5000","timestamp":"16:51:30"}
+{"level":"info","message":"App is running on 5000","timestamp":"17:14:51"}
+{"level":"info","message":"App is running on 5000","timestamp":"22:57:58"}
+{"level":"info","message":"App is running on 5000","timestamp":"23:40:10"}
+{"level":"info","message":"App is running on 5000","timestamp":"23:44:38"}
+{"level":"info","message":"App is running on 5000","timestamp":"23:46:48"}
+{"level":"info","message":"App is running on 5000","timestamp":"23:47:44"}
+{"level":"info","message":"App is running on 5000","timestamp":"23:48:50"}
+{"level":"info","message":"App is running on 5000","timestamp":"23:49:26"}
+{"level":"info","message":"App is running on 5000","timestamp":"23:51:04"}
+{"level":"info","message":"App is running on 5000","timestamp":"23:54:55"}
+{"level":"info","message":"App is running on 5000","timestamp":"23:56:43"}
+{"level":"info","message":"App is running on 5000","timestamp":"23:59:32"}
+{"level":"info","message":"App is running on 5000","timestamp":"00:00:33"}
+{"level":"info","message":"App is running on 5000","timestamp":"00:02:25"}
+{"level":"info","message":"App is running on 5000","timestamp":"00:04:06"}
+{"level":"info","message":"App is running on 5000","timestamp":"00:04:45"}
+{"level":"info","message":"App is running on 5000","timestamp":"00:05:40"}
+{"level":"info","message":"App is running on 5000","timestamp":"00:06:40"}
+{"level":"info","message":"App is running on 5000","timestamp":"00:06:59"}
+{"level":"info","message":"App is running on 5000","timestamp":"00:12:07"}
+{"level":"info","message":"App is running on 5000","timestamp":"00:14:45"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:18:42"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:28:58"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:36:33"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:39:09"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:41:39"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:42:23"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:42:25"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:43:26"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:43:58"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:47:25"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:47:30"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:47:35"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:48:15"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:48:18"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:54:51"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:55:53"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:56:22"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:56:52"}
+{"level":"info","message":"App is running on 5000","timestamp":"13:58:03"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:03:26"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:03:52"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:05:09"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:05:11"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:12:21"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:14:54"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:16:41"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:22:56"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:23:11"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:24:07"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:24:43"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:27:27"}
+{"level":"info","message":"App is running on 5000","timestamp":"14:29:11"}
