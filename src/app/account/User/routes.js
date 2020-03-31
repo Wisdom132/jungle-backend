@@ -9,5 +9,5 @@ router.post("/login", userController.logUserIn)
 router.post("/forgot-password", userController.forgotpassword)
 router.post("/reset-password/:token", userController.resetPassword)
 router.post("/change-password", userController.changePassword)
-
+router.get("/users/:page", userController.getAllUsers)
 module.exports = router;
