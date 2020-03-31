@@ -1,6 +1,7 @@
 const User = require("./model");
 const mailer = require("../../../utilities/mailer")
 const Token = require("../Token/model")
+const bcrypt = require("bcrypt")
 const token = require("../../../utilities/tokenGen")
 
 //create new user and send mail to the user
@@ -35,7 +36,6 @@ exports.createNewUser = async (req, res) => {
         })
     }
 }
-
 //user confirm email
 exports.confirmEmail = async (req, res) => {
     try {
@@ -121,12 +121,14 @@ exports.logUserIn = async (req, res) => {
         let user = await User.findOne({
             email: login.email
         });
+        //check if user exit
         if (!user) {
             res.status(400).json({
                 type: "Not Found",
                 msg: "Wrong Login Details"
             })
         }
+        // check validity of user 
         if (!user.isVerified) {
             res.status(400).json({
                 type: "Not Verified",
@@ -154,9 +156,6 @@ exports.logUserIn = async (req, res) => {
                 msg: "Wrong Login Details"
             })
         }
-
-
-
     } catch (err) {
         console.log(err)
         res.status(500).json({
@@ -164,4 +163,101 @@ exports.logUserIn = async (req, res) => {
             msg: err
         })
     }
+}
+exports.forgotpassword = async (req, res) => {
+    try {
+        let user = await User.findOne({
+            email: req.body.email
+        });
+        if (!user) {
+            res.status(400).json({
+                type: "User Not Found",
+                msg: "User with this email not found"
+            })
+        }
+        if (!user.isVerified) {
+            res.status(400).json({
+                type: "USER NOT VERIFIED",
+                msg: "Please Verify Your Account"
+            })
+        }
+        if (user) {
+            let returnedUser = await User.findByIdAndUpdate(
+                user._id, {
+                    $set: {
+                        resetPasswordToken: await token.generateRandomToken(),
+                        resetPasswordExpirationDate: Date.now() + 86400000
+                    },
+
+                }, {
+                    new: true
+                })
+            if (returnedUser) {
+                mailer.forgotPassword(returnedUser.email, returnedUser.resetPasswordToken)
+            }
+            res.json({
+                type: "Mail Sent!",
+                msg: "Confirm Password Reset"
+            })
+        }
+    } catch (err) {
+        console.log(err)
+        res.status(400).json({
+            type: "Not Found",
+
+            msg: "Something Went Wromg"
+        })
+    }
+}
+
+exports.resetPassword = async (req, res) => {
+    let newPassword = req.body.newpassword;
+    let confirmpassword = req.body.confirmpassword;
+    try {
+        let user = await User.findOne({
+            resetPasswordToken: req.params.token,
+            resetPasswordExpirationDate: {
+                $gt: Date.now()
+            }
+        })
+        if (!user) {
+            res.status(400).json({
+                type: "Token Expired",
+                msg: "Error,Token Expired"
+            })
+        }
+        if (user) {
+            if (newPassword === confirmpassword) {
+                user.password = await bcrypt.hashSync(newPassword, 10);
+                user.resetPasswordToken = undefined;
+                user.resetPasswordExpirationDate = undefined;
+                let newUserDetails = await user.save();
+
+                if (newUserDetails) {
+                    mailer.resetConfirmation(user.email)
+                }
+                res.status(200).json({
+
+                    type: "Success",
+                    msg: "Password Reset Successfully",
+                })
+
+            } else {
+                res.status(400).json({
+                    type: "Error",
+                    msg: "Password does not match"
+                })
+            }
+
+        }
+    } catch (err) {
+        console.log(err)
+        res.status(400).json({
+            type: "Not Found",
+            msg: "Something Went Wrong"
+        })
+    }
+
+
+
 }

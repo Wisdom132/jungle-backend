@@ -38,7 +38,7 @@ transporter.use('compile', hbs(handlebarOptions));
 let confirmMail = (user, token) => transporter.sendMail({
   from: '"Jungle Deleveries" <ekpotwisdom@gmail.com>',
   to: user,
-  subject: 'Testing Dynamic',
+  subject: "Email Confirmation",
   text: 'If You Recieve This Then You Are A Strong Man',
   template: "confirmemail",
   context: {
@@ -46,6 +46,30 @@ let confirmMail = (user, token) => transporter.sendMail({
   }
 });
 
+let forgotPassword = (user, token) => transporter.sendMail({
+  from: '"Jungle Deleveries" <ekpotwisdom@gmail.com>',
+  to: user,
+  subject: "Password Reset",
+  text: 'If You Recieve This Then You Are A Strong Man',
+  template: "forgotpassword",
+  context: {
+    token: token
+  }
+})
+
+let resetConfirmation = (user) => transporter.sendMail({
+  from: '"Jungle Deleveries" <ekpotwisdom@gmail.com>',
+  to: user,
+  subject: "Password Reset",
+  text: 'If You Recieve This Then You Are A Strong Man',
+  template: "resetConfirmation",
+  context: {
+    user: user
+  }
+})
+
 module.exports = {
-  confirmMail
+  confirmMail,
+  forgotPassword,
+  resetConfirmation
 };
