@@ -3,6 +3,7 @@ const mailer = require("../../../utilities/mailer")
 const Token = require("../Token/model")
 const bcrypt = require("bcrypt")
 const token = require("../../../utilities/tokenGen")
+const paginator = require("../../../utilities/paginator")
 exports.createNewUser = async (req, res) => {
     try {
         const user = new User({
@@ -251,7 +252,6 @@ exports.resetPassword = async (req, res) => {
         })
     }
 }
-
 exports.changePassword = async (req, res) => {
     let oldpassword = req.body.password
     let newPassword = req.body.newpassword;
@@ -306,6 +306,18 @@ exports.changePassword = async (req, res) => {
             type: "Error",
             msg: "Something Went Wrong"
         })
+    }
+
+}
+exports.getAllUsers = async (req, res) => {
+    try {
+        let page = req.params.page;
+
+        let data = await paginator.paginator(User, page);
+        res.json(data)
+    } catch (err) {
+        res.json(err);
+        console.log(err)
     }
 
 }
