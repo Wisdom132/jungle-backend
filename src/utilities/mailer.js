@@ -68,7 +68,19 @@ let resetConfirmation = (user) => transporter.sendMail({
   }
 })
 
+let changePasswordConfirmation = (user) => transporter.sendMail({
+  from: '"Jungle Deleveries" <ekpotwisdom@gmail.com>',
+  to: user,
+  subject: "Password Changed",
+  text: 'If You Recieve This Then You Are A Strong Man',
+  template: "changepasswordconfirmation",
+  context: {
+    user: user
+  }
+})
+
 module.exports = {
+  changePasswordConfirmation,
   confirmMail,
   forgotPassword,
   resetConfirmation

@@ -3,8 +3,6 @@ const mailer = require("../../../utilities/mailer")
 const Token = require("../Token/model")
 const bcrypt = require("bcrypt")
 const token = require("../../../utilities/tokenGen")
-
-//create new user and send mail to the user
 exports.createNewUser = async (req, res) => {
     try {
         const user = new User({
@@ -36,7 +34,6 @@ exports.createNewUser = async (req, res) => {
         })
     }
 }
-//user confirm email
 exports.confirmEmail = async (req, res) => {
     try {
         let userToken = await Token.findOne({
@@ -79,7 +76,6 @@ exports.confirmEmail = async (req, res) => {
         })
     }
 }
-
 exports.resendEmail = async (req, res) => {
     try {
         let user = await User.findOne({
@@ -111,7 +107,6 @@ exports.resendEmail = async (req, res) => {
         })
     }
 }
-
 exports.logUserIn = async (req, res) => {
     const login = {
         email: req.body.email,
@@ -209,7 +204,6 @@ exports.forgotpassword = async (req, res) => {
         })
     }
 }
-
 exports.resetPassword = async (req, res) => {
     let newPassword = req.body.newpassword;
     let confirmpassword = req.body.confirmpassword;
@@ -237,7 +231,6 @@ exports.resetPassword = async (req, res) => {
                     mailer.resetConfirmation(user.email)
                 }
                 res.status(200).json({
-
                     type: "Success",
                     msg: "Password Reset Successfully",
                 })
@@ -257,7 +250,62 @@ exports.resetPassword = async (req, res) => {
             msg: "Something Went Wrong"
         })
     }
+}
+
+exports.changePassword = async (req, res) => {
+    let oldpassword = req.body.password
+    let newPassword = req.body.newpassword;
+    let confirmpassword = req.body.confirmpassword;
+    try {
+        let user = await User.findOne({
+            email: req.body.email
+        });
+        if (user) {
+            let match = await user.compareUserPassword(oldpassword, user.password);
+            if (match) {
+                if (newPassword === oldpassword) {
+                    res.status(200).json({
+                        type: "Success",
+                        msg: "Please use a different password",
+                    })
+                }
+                if (newPassword === confirmpassword) {
+                    user.password = await bcrypt.hashSync(newPassword, 10);
+                    let newChangedPassword = await user.save();
+                    if (newChangedPassword) {
+                        mailer.changePasswordConfirmation(user.email)
+                    }
+
+                    res.status(200).json({
+                        type: "Success",
+                        msg: "Password Changed Successfully",
+                    })
+                } else {
+                    res.status(400).json({
+                        type: "Error",
+                        msg: "Password Does not match"
+                    })
+                }
+            } else {
+                res.status(400).json({
+                    type: "Error",
+                    msg: "Old Password is Incorrect"
+                })
+            }
+        } else {
+            res.status(400).json({
+                type: "Error",
+                msg: "User Not Found"
+            })
+        }
 
 
+    } catch (err) {
+        console.log(err)
+        res.status(400).json({
+            type: "Error",
+            msg: "Something Went Wrong"
+        })
+    }
 
 }
