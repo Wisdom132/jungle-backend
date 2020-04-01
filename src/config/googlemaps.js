@@ -1,7 +1,8 @@
 const GoogleMapsAPI = require("googlemaps")
+const config = require("./index");
 
 let publicConfig = {
-    key: 'AIzaSyDMKSUYaVP2C1pwlklUllVmo8nOoC9zMuU',
+    key: config.mapkey,
     stagger_time: 1000, // for elevationPath
     encode_polylines: false,
     secure: true, // use https

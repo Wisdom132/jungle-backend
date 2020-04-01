@@ -325,12 +325,12 @@ exports.changePassword = async (req, res) => {
 }
 exports.getAllUsers = async (req, res) => {
     try {
-        // mapper.gmAPI.geocode(geocodeParams, (err, data) => res.json(data))
+        mapper.gmAPI.geocode(geocodeParams, (err, data) => res.json(data))
         let page = req.params.page;
         let data = await paginator.paginator(User, page, 6);
-        res.status(200).json({
-            data
-        })
+        // res.status(200).json({
+        //     data
+        // })
     } catch (err) {
         res.json(err);
         console.log(err)
