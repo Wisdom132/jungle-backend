@@ -4,6 +4,20 @@ const Token = require("../Token/model")
 const bcrypt = require("bcrypt")
 const token = require("../../../utilities/tokenGen")
 const paginator = require("../../../utilities/paginator")
+const mapper = require("../../../config/googlemaps")
+
+
+
+var geocodeParams = {
+    "address": "100 unit estate,unit 90 udoudoma avenue,uyo Nigeria",
+    // "components": "components=country:GB",
+    // "bounds": "55,-1|54,1",
+    // "language": "en",
+    // "region": "uk"
+};
+
+
+
 exports.createNewUser = async (req, res) => {
     try {
         const user = new User({
@@ -311,10 +325,12 @@ exports.changePassword = async (req, res) => {
 }
 exports.getAllUsers = async (req, res) => {
     try {
+        mapper.gmAPI.geocode(geocodeParams, (err, data) => res.json(data))
         let page = req.params.page;
-
-        let data = await paginator.paginator(User, page);
-        res.json(data)
+        let data = await paginator.paginator(User, page, 6);
+        // res.status(200).json({
+        //     data
+        // })
     } catch (err) {
         res.json(err);
         console.log(err)
