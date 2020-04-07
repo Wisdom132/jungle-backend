@@ -79,7 +79,7 @@ let changePasswordConfirmation = (user) => transporter.sendMail({
   }
 })
 
-let confirmResturant = (user, token) => transporter.sendMail({
+let confirmRestaurant = (user, token) => transporter.sendMail({
   from: '"Jungle Deleveries" <ekpotwisdom@gmail.com>',
   to: user,
   subject: "Confirm Resturant",
@@ -96,5 +96,5 @@ module.exports = {
   confirmMail,
   forgotPassword,
   resetConfirmation,
-  confirmResturant
+  confirmRestaurant
 };

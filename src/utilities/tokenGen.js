@@ -12,9 +12,9 @@ let genToken = async (userEmail) => {
     return succesToken
 }
 
-let genResturantToken = async (resturantEmail) => {
+let genRestaurantToken = async (restaurantEmail) => {
     let token = new Token({
-        resturantEmail: resturantEmail,
+        restaurantEmail: restaurantEmail,
         token: await crypto.randomBytes(16).toString("hex")
     })
 
@@ -31,5 +31,5 @@ let generateRandomToken = async () => {
 module.exports = {
     genToken,
     generateRandomToken,
-    genResturantToken
+    genRestaurantToken
 };

@@ -1,7 +1,9 @@
 const userRoutes = require("./account/User/routes");
-const resturantRoutes = require("./api/resturant/routes")
+const restaurantRoutes = require("./api/restaurant/routes")
+const categoryRoutes = require("./api/category/routes")
 
 module.exports = (app) => {
     app.use("/user", userRoutes);
-    app.use("/resturant", resturantRoutes)
+    app.use("/restaurant", restaurantRoutes);
+    app.use("/category", categoryRoutes)
 }

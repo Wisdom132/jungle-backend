@@ -3,13 +3,13 @@ const uniqueValidator = require('mongoose-unique-validator');
 const Schema = mongoose.Schema;
 
 
-const resturantSchema = new Schema({
+const restaurantSchema = new Schema({
     userId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
         unique: true
     },
-    resturant_name: {
+    restaurant_name: {
         type: String,
         required: true,
         unique: true
@@ -49,7 +49,7 @@ const resturantSchema = new Schema({
     timestamps: true,
 });
 
-module.exports = mongoose.model("Resturant", resturantSchema);
-resturantSchema.plugin(uniqueValidator, {
+module.exports = mongoose.model("Restaurant", restaurantSchema);
+restaurantSchema.plugin(uniqueValidator, {
     message: '{PATH} Already in use'
 });

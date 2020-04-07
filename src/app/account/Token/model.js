@@ -4,7 +4,7 @@ const tokenSchema = mongoose.Schema({
     type: String,
 
   },
-  resturantEmail: {
+  restaurantEmail: {
     type: String,
   },
   token: {
