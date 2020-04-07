@@ -327,7 +327,7 @@ exports.getAllUsers = async (req, res) => {
     try {
         // mapper.gmAPI.geocode(geocodeParams, (err, data) => res.json(data))
         let page = parseInt(req.params.page);
-        let data = await paginator.paginator(User, page, 2);
+        let data = await paginator.paginator(User, page, 2, []);
         res.status(200).json({
             data
         })

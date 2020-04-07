@@ -1,18 +1,18 @@
 // const User = require("../../account/User/model")
-const Resturant = require("./model");
+const Restaurant = require("./model");
 const token = require("../../../utilities/tokenGen")
 const mailer = require("../../../utilities/mailer")
 const Token = require("../../account/Token/model")
-const paginator = require("express-mongo-paginator");
+// const paginator = require("express-mongo-paginator");
 const cloudinary = require("../../../utilities/cloudinary")
-// const paginator = require("../../../utilities/paginator")
+const paginator = require("../../../utilities/paginator")
 
 
-exports.createResturant = async (req, res) => {
+exports.createRestaurant = async (req, res) => {
     try {
-        let resturant = new Resturant({
+        let restaurant = new Restaurant({
             userId: req.body.userId,
-            resturant_name: req.body.resturant_name,
+            restaurant_name: req.body.restaurant_name,
             email: req.body.email,
             phone_number: req.body.phone_number,
             location: {
@@ -21,10 +21,10 @@ exports.createResturant = async (req, res) => {
                 state: req.body.state
             }
         })
-        let generatedToken = await token.genResturantToken(req.body.email);
-        let addAction = await resturant.save();
+        let generatedToken = await token.genRestaurantToken(req.body.email);
+        let addAction = await restaurant.save();
         if (addAction) {
-            mailer.confirmResturant(req.body.email, generatedToken.token)
+            mailer.confirmRestaurant(req.body.email, generatedToken.token)
         }
         res.status(200).json({
             msg: "Please Verify Your Email",
@@ -32,20 +32,20 @@ exports.createResturant = async (req, res) => {
         })
 
     } catch (err) {
-        console.log()
+        console.log(err)
         res.status(500).json({
             error: err
         })
     }
 }
 
-exports.confirmResturant = async (req, res) => {
+exports.confirmRestaurant = async (req, res) => {
     try {
         let userToken = await Token.findOne({
             token: req.params.token
         });
-        let resturant = await Resturant.findOne({
-            email: userToken.resturantEmail
+        let restaurant = await Restaurant.findOne({
+            email: userToken.restaurantEmail
         })
 
         //check if its a valid token
@@ -56,23 +56,23 @@ exports.confirmResturant = async (req, res) => {
             })
         }
 
-        if (!resturant) {
+        if (!restaurant) {
             res.status(400).json({
                 type: "Not Found",
                 msg: "We were unable to find a user for this token."
             })
         }
-        if (resturant.isVerified) {
+        if (restaurant.isVerified) {
             res.status(400).json({
                 type: "Already Verified",
-                msg: "This Resturant has already been verified."
+                msg: "This restaurant has already been verified."
             })
         }
-        resturant.isVerified = true;
-        let verifiedResturant = await resturant.save();
+        restaurant.isVerified = true;
+        await restaurant.save();
         res.status(200).json({
-            type: "Resturant Verified",
-            msg: "Your Resturant has been successfully verified "
+            type: "Restaurant Verified",
+            msg: "Your Restaurant has been successfully verified "
         })
     } catch (err) {
         console.log(err)
@@ -84,20 +84,20 @@ exports.confirmResturant = async (req, res) => {
 
 exports.resendConfirmation = async (req, res) => {
     try {
-        let resturant = await Resturant.findOne({
+        let restaurant = await Restaurant.findOne({
             email: req.body.email
         })
 
-        if (!resturant) {
+        if (!restaurant) {
             res.status(400).json({
                 type: "Not Found",
-                mes: "No Resturant with this email was found.Please Create a Resturant"
+                mes: "No Restaurant with this email was found.Please Create a Restaurant"
             })
         }
-        if (resturant.isVerified) {
+        if (restaurant.isVerified) {
             res.status(400).send({
                 type: "Already Verified",
-                msg: "This Resturant has already been verified. Please login with user info."
+                msg: "This Restaurant has already been verified. Please login with user info."
             });
         }
         res.status(200).json({
@@ -105,8 +105,8 @@ exports.resendConfirmation = async (req, res) => {
             msg: "Verification Email Sent"
         })
 
-        let generatedToken = await token.genResturantToken(req.body.email);
-        mailer.confirmResturant(resturant.email, generatedToken.token)
+        let generatedToken = await token.genRestaurantToken(req.body.email);
+        mailer.confirmRestaurant(restaurant.email, generatedToken.token)
 
     } catch (err) {
         console.log(err)
@@ -116,11 +116,11 @@ exports.resendConfirmation = async (req, res) => {
     }
 }
 
-exports.getAllResturant = async (req, res) => {
+exports.getAllRestaurant = async (req, res) => {
     try {
         let page = parseInt(req.params.page);
-        let data = await paginator.paginator(Resturant, page, 2, [{
-            resturant_name: req.query.name
+        let data = await paginator.paginator(Restaurant, page, 2, [{
+            restaurant_name: req.query.name
         }]);
 
         res.status(200).json({
@@ -134,13 +134,19 @@ exports.getAllResturant = async (req, res) => {
     }
 }
 
-exports.activateResturant = async (req, res) => {
+exports.activateRestaurant = async (req, res) => {
     try {
-        let resturant = await Resturant.findOne({
+        let restaurant = await Restaurant.findOne({
             _id: req.body.id
         });
-        resturant.isActivated = req.body.status;
-        await resturant.save();
+        if (!restaurant) {
+            res.status(400).json({
+                type: "Not Found",
+                msg: "Resturant Not Found"
+            })
+        }
+        restaurant.isActivated = req.body.status;
+        await restaurant.save();
         res.status(200).json({
             type: "Action Successful",
             msg: "Status Updated"
