@@ -3,8 +3,8 @@ const mailer = require("../../../utilities/mailer")
 const Token = require("../Token/model")
 const bcrypt = require("bcrypt")
 const token = require("../../../utilities/tokenGen")
-const paginator = require("../../../utilities/paginator")
 const mapper = require("../../../config/googlemaps")
+const paginator = require("express-mongo-paginator")
 
 
 
@@ -325,12 +325,12 @@ exports.changePassword = async (req, res) => {
 }
 exports.getAllUsers = async (req, res) => {
     try {
-        mapper.gmAPI.geocode(geocodeParams, (err, data) => res.json(data))
-        let page = req.params.page;
-        let data = await paginator.paginator(User, page, 6);
-        // res.status(200).json({
-        //     data
-        // })
+        // mapper.gmAPI.geocode(geocodeParams, (err, data) => res.json(data))
+        let page = parseInt(req.params.page);
+        let data = await paginator.paginator(User, page, 2);
+        res.status(200).json({
+            data
+        })
     } catch (err) {
         res.json(err);
         console.log(err)
