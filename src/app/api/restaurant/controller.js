@@ -3,9 +3,9 @@ const Restaurant = require("./model");
 const token = require("../../../utilities/tokenGen")
 const mailer = require("../../../utilities/mailer")
 const Token = require("../../account/Token/model")
-// const paginator = require("express-mongo-paginator");
+const paginator = require("express-mongo-paginator");
 const cloudinary = require("../../../utilities/cloudinary")
-const paginator = require("../../../utilities/paginator")
+// const paginator = require("../../../utilities/paginator")
 
 
 exports.createRestaurant = async (req, res) => {
@@ -139,8 +139,14 @@ exports.activateRestaurant = async (req, res) => {
         let restaurant = await Restaurant.findOne({
             _id: req.body.id
         });
+        if (!restaurant.isVerified) {
+            return res.status(400).json({
+                type: "Action Denied",
+                msg: "Restaurant Has to be verified First"
+            })
+        }
         if (!restaurant) {
-            res.status(400).json({
+            return res.status(400).json({
                 type: "Not Found",
                 msg: "Resturant Not Found"
             })
