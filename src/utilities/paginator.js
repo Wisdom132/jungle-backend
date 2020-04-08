@@ -29,7 +29,7 @@ let paginator = async (collection, page, perpage, definedConditions) => {
     };
   }
   console.log(findConditions)
-  let response = await collection.find(findConditions).skip(skipMath).limit(perPage);
+  let response = await collection.find(findConditions).populate().skip(skipMath).limit(perPage);
   let count = await collection.countDocuments();
   return data = {
     data: response,

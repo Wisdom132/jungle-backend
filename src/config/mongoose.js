@@ -6,7 +6,7 @@ module.exports = function (app) {
         useUnifiedTopology: true,
         useNewUrlParser: true,
         useFindAndModify: false
-    })
+    }).then(res => console.log("conneceted")).catch(err => console.log(err))
     mongoose.Promise = global.Promise;
 
     process.on("SIGINT", cleanup);
