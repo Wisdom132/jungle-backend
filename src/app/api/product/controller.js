@@ -4,6 +4,7 @@ const Restaurant = require("../restaurant/model")
 const paginator = require("express-mongo-paginator");
 
 
+
 exports.addNewProduct = async (req, res) => {
     try {
         let product = new Product({
@@ -60,6 +61,52 @@ exports.addNewProduct = async (req, res) => {
 
     } catch (err) {
         res.status(500).json({
+            error: err
+        })
+    }
+}
+
+exports.getAllProducts = async (req, res) => {
+    try {
+        let page = parseInt(req.params.page);
+        let data = await paginator.paginator(Product, page, 2, []);
+        res.status(200).json({
+            data
+        })
+
+    } catch (err) {
+        res.status(400).json({
+            type: "Error",
+            msg: "Something Went Wrong"
+        })
+    }
+}
+
+exports.editProductDetails = async (req, res) => {
+    try {
+        let productId = req.params.productId
+        let productToBeEdited = await Product.findOneAndUpdate(productId, req.body, {
+            new: true
+        })
+        res.status(200).json(productToBeEdited)
+
+    } catch (err) {
+        res.status(500).json({
+            msg: "Something Went Wrong",
+            error: err
+        })
+    }
+}
+
+exports.getProductDetails = async (req, res) => {
+    try {
+        let productId = req.params.productId
+        let productDetails = await Product.findById(productId)
+        res.status(200).json(productDetails)
+
+    } catch (err) {
+        res.status(500).json({
+            msg: "Something Went Wrong",
             error: err
         })
     }

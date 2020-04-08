@@ -3,9 +3,9 @@ const Restaurant = require("./model");
 const token = require("../../../utilities/tokenGen")
 const mailer = require("../../../utilities/mailer")
 const Token = require("../../account/Token/model")
-// const paginator = require("express-mongo-paginator");
+const paginator = require("express-mongo-paginator");
 const cloudinary = require("../../../utilities/cloudinary")
-const paginator = require("../../../utilities/paginator")
+// const paginator = require("../../../utilities/paginator")
 
 
 exports.createRestaurant = async (req, res) => {
