@@ -3,9 +3,9 @@ const Restaurant = require("./model");
 const token = require("../../../utilities/tokenGen")
 const mailer = require("../../../utilities/mailer")
 const Token = require("../../account/Token/model")
-const paginator = require("express-mongo-paginator");
+// const paginator = require("express-mongo-paginator");
 const cloudinary = require("../../../utilities/cloudinary")
-// const paginator = require("../../../utilities/paginator")
+const paginator = require("../../../utilities/paginator")
 
 
 exports.createRestaurant = async (req, res) => {
@@ -50,20 +50,20 @@ exports.confirmRestaurant = async (req, res) => {
 
         //check if its a valid token
         if (!userToken) {
-            res.status(400).json({
+            return res.status(400).json({
                 type: "Not Found",
                 msg: "We were unable to find a valid token. Your token my have expired."
             })
         }
 
         if (!restaurant) {
-            res.status(400).json({
+            return res.status(400).json({
                 type: "Not Found",
                 msg: "We were unable to find a user for this token."
             })
         }
         if (restaurant.isVerified) {
-            res.status(400).json({
+            return res.status(400).json({
                 type: "Already Verified",
                 msg: "This restaurant has already been verified."
             })
@@ -89,13 +89,13 @@ exports.resendConfirmation = async (req, res) => {
         })
 
         if (!restaurant) {
-            res.status(400).json({
+            return res.status(400).json({
                 type: "Not Found",
                 mes: "No Restaurant with this email was found.Please Create a Restaurant"
             })
         }
         if (restaurant.isVerified) {
-            res.status(400).send({
+            return res.status(400).send({
                 type: "Already Verified",
                 msg: "This Restaurant has already been verified. Please login with user info."
             });
