@@ -1,5 +1,11 @@
 const mongoose = require("mongoose");
-let paginator = async (collection, page, perpage, definedConditions) => {
+let paginator = async (collection, page, perpage, definedConditions, idToBePopulated) => {
+
+  let splittedData;
+  if (idToBePopulated) {
+    splittedData = idToBePopulated.replace(/,/g, " ").toString();
+  }
+
 
   var perPage = perpage || 2
   var page = page || 1;
@@ -29,7 +35,7 @@ let paginator = async (collection, page, perpage, definedConditions) => {
     };
   }
   console.log(findConditions)
-  let response = await collection.find(findConditions).populate().skip(skipMath).limit(perPage);
+  let response = await collection.find(findConditions).populate(splittedData).skip(skipMath).limit(perPage);
   let count = await collection.countDocuments();
   return data = {
     data: response,

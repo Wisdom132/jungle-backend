@@ -5,6 +5,7 @@ const bcrypt = require("bcrypt")
 const token = require("../../../utilities/tokenGen")
 const mapper = require("../../../config/googlemaps")
 const paginator = require("express-mongo-paginator")
+// const paginator = require("../../../utilities/paginator")
 
 
 
