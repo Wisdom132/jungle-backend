@@ -24,9 +24,11 @@ let paginator = async (collection, page, perpage, definedConditions, idToBePopul
           }
         ];
       }
+
     }
   });
 
+  // console.log(conditions)
   let findConditions = {};
 
   if (conditions.length > 0) {

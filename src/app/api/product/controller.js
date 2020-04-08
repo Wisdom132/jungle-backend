@@ -1,6 +1,7 @@
 const Product = require("./model");
 const Category = require("../category/model")
 const Restaurant = require("../restaurant/model")
+// const paginator = require("../../../utilities/paginator")
 const paginator = require("express-mongo-paginator");
 
 
@@ -17,9 +18,10 @@ exports.addNewProduct = async (req, res) => {
             isAvailable: req.body.isAvailable
         })
 
-        let restaurant = await Restaurant.find({
+        let restaurant = await Restaurant.findOne({
             _id: req.body.restaurantId
         })
+
 
         let category = await Category.findOne({
             _id: req.body.categoryId
@@ -69,12 +71,15 @@ exports.addNewProduct = async (req, res) => {
 exports.getAllProducts = async (req, res) => {
     try {
         let page = parseInt(req.params.page);
-        let data = await paginator.paginator(Product, page, 2, []);
+        let data = await paginator.paginator(Product, page, 2, [{
+            restaurantId: req.query.restaurantId
+        }, ]);
         res.status(200).json({
             data
         })
 
     } catch (err) {
+        console.log(err)
         res.status(400).json({
             type: "Error",
             msg: "Something Went Wrong"
@@ -103,6 +108,23 @@ exports.getProductDetails = async (req, res) => {
         let productId = req.params.productId
         let productDetails = await Product.findById(productId)
         res.status(200).json(productDetails)
+
+    } catch (err) {
+        res.status(500).json({
+            msg: "Something Went Wrong",
+            error: err
+        })
+    }
+}
+
+exports.deleteProduct = async (req, res) => {
+    try {
+        let productId = req.params.productId
+        let productRemoved = await Product.findOneAndRemove(productId)
+        res.status(200).json({
+            type: "Removed",
+            msg: "Product Removed"
+        })
 
     } catch (err) {
         res.status(500).json({
