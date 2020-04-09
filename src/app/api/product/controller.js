@@ -1,8 +1,8 @@
 const Product = require("./model");
 const Category = require("../category/model")
 const Restaurant = require("../restaurant/model")
-// const paginator = require("../../../utilities/paginator")
-const paginator = require("express-mongo-paginator");
+const paginator = require("../../../utilities/paginator")
+// const paginator = require("express-mongo-paginator");
 
 
 
@@ -72,7 +72,15 @@ exports.getAllProducts = async (req, res) => {
     try {
         let page = parseInt(req.params.page);
         let data = await paginator.paginator(Product, page, 2, [{
-            restaurantId: req.query.restaurantId
+            restaurantId: req.query.restaurantId,
+            // maxprice: {
+            //     $gt: req.query.maxprice ? req.query.maxprice : undefined
+            // },
+            // minprice: {
+            //     $lt: req.query.minprice ? req.query.minprice : undefined
+            // },
+            isAvailable: req.query.isAvailable,
+            name: req.query.name
         }, ]);
         res.status(200).json({
             data
