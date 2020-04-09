@@ -37,7 +37,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^4.0.0",
     "express-jwt": "^5.3.1",
-    "express-mongo-paginator": "^1.1.4",
+    "express-mongo-paginator": "^1.1.7",
     "googlemaps": "^1.12.0",
     "inquirer": "^7.1.0",
     "jsonwebtoken": "^8.5.1",

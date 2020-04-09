@@ -5,7 +5,6 @@ const mailer = require("../../../utilities/mailer")
 const Token = require("../../account/Token/model")
 const paginator = require("express-mongo-paginator");
 const cloudinary = require("../../../utilities/cloudinary")
-// const paginator = require("../../../utilities/paginator")
 
 
 exports.createRestaurant = async (req, res) => {
