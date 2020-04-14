@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const morgan = require('morgan')
 
 
 const config = require("./config");
@@ -13,7 +14,7 @@ const port = process.env.PORT || config.port;
 const ENV = process.env.NODE_ENV || config.env;
 
 app.set("env", ENV);
-
+app.use(morgan('dev'))
 app.use(bodyParser.json());
 app.use(customResponses);
 
