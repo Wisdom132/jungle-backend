@@ -1,35 +1,28 @@
-module.exports = function Cart(cart) {
-  this.items = cart.items || {}; //object of products
-  this.totalItems = cart.totalItems || 0; // total items 
-  this.totalPrice = cart.totalPrice || 0; // ttotal price of items in cart
-  this.userId = cart.userId
+const mongoose = require('mongoose');
 
-  this.add = function(item, id) {
-    var cartItem = this.items[id];
-    if (!cartItem) {
-      cartItem = this.items[id] = {
-        item: item,
-        quantity: 0,
-        price: 0
-      };
+const Schema = mongoose.Schema;
+
+let ItemSchema = new Schema({
+    productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Category",
+    },
+    qty: {
+        type: Number,
+        required: true,
+        min: [1, 'Quantity can not be less then 1.']
     }
-    cartItem.quantity++;
-    cartItem.price = cartItem.item.price * cartItem.quantity;
-    this.totalItems++;
-    this.totalPrice += cartItem.item.price;
-  };
+}, {
+    timestamps: true
+})
 
-  this.remove = function(id) {
-    this.totalItems -= this.items[id].quantity;
-    this.totalPrice -= this.items[id].price;
-    delete this.items[id];
-  };
-
-  this.getItems = function() {
-    var arr = [];
-    for (var id in this.items) {
-      arr.push(this.items[id]);
-    }
-    return arr;
-  };
-};
+const CartSchema = new Schema({
+    UserId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+    },
+    items: [ItemSchema]
+}, {
+    timestamps: true
+})
+module.exports = mongoose.model('cart', CartSchema);
