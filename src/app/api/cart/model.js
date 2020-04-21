@@ -7,7 +7,7 @@ let ItemSchema = new Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "Category",
     },
-    qty: {
+    quantity: {
         type: Number,
         required: true,
         min: [1, 'Quantity can not be less then 1.']
@@ -17,7 +17,7 @@ let ItemSchema = new Schema({
 })
 
 const CartSchema = new Schema({
-    UserId: {
+    userId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
     },
