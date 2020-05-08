@@ -148,7 +148,12 @@ exports.subtractItem = async (req, res) => {
         }
 
     } catch (err) {
-
+        console.log(err)
+        res.status(400).json({
+            type: "Invalid",
+            msg: "Something Went Wrong",
+            err: err
+        })
     }
 }
 exports.getUserCart = async (req, res) => {
@@ -168,6 +173,41 @@ exports.getUserCart = async (req, res) => {
             })
         }
         res.status(200).json(cart)
+    } catch (err) {
+        console.log(err)
+        res.status(400).json({
+            type: "Invalid",
+            msg: "Something Went Wrong",
+            err: err
+        })
+    }
+}
+
+exports.emptyCart = async (req, res) => {
+    try {
+        const {
+            userId
+        } = req.body;
+        let cart = await Cart.findOne({
+            userId: userId
+        })
+        if (cart) {
+            cart.items = [];
+            cart.subTotal = 0
+            let data = await cart.save();
+            res.status(200).json({
+                type: "success",
+                mgs: "Cart Has been emptied",
+                data: data
+            })
+
+        } else {
+            return res.status(400).json({
+                type: "Invalid",
+                msg: "Cart Not Found",
+            })
+        }
+
     } catch (err) {
         console.log(err)
         res.status(400).json({
