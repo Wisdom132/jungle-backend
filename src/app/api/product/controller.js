@@ -1,10 +1,8 @@
 const Product = require("./model");
 const Category = require("../category/model")
 const Restaurant = require("../restaurant/model")
-const paginator = require("../../../utilities/paginator")
-// const paginator = require("express-mongo-paginator");
-
-
+// const paginator = require("../../../utilities/paginator")
+const paginator = require("express-mongo-paginator");
 
 
 exports.addNewProduct = async (req, res) => {
@@ -68,7 +66,6 @@ exports.addNewProduct = async (req, res) => {
     })
   }
 }
-
 exports.getAllProducts = async (req, res) => {
   let getInputtedMaxPrice = () => {
     let maxprice = req.query.maxprice;
@@ -103,7 +100,7 @@ exports.getAllProducts = async (req, res) => {
       price: getInputtedMinPrice(),
       isAvailable: req.query.isAvailable,
       name: req.query.name
-    },]);
+    }, ]);
     res.status(200).json(data)
 
   } catch (err) {
@@ -114,7 +111,6 @@ exports.getAllProducts = async (req, res) => {
     })
   }
 }
-
 exports.editProductDetails = async (req, res) => {
   try {
     let productId = req.params.productId
@@ -130,7 +126,6 @@ exports.editProductDetails = async (req, res) => {
     })
   }
 }
-
 exports.getProductDetails = async (req, res) => {
   try {
     let productId = req.params.productId
@@ -144,7 +139,6 @@ exports.getProductDetails = async (req, res) => {
     })
   }
 }
-
 exports.deleteProduct = async (req, res) => {
   try {
     let productId = req.params.productId

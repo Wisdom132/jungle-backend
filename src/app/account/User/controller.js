@@ -7,8 +7,6 @@ const mapper = require("../../../config/googlemaps")
 const paginator = require("express-mongo-paginator")
 // const paginator = require("../../../utilities/paginator")
 
-
-
 var geocodeParams = {
     "address": "100 unit estate,unit 90 udoudoma avenue,uyo Nigeria",
     // "components": "components=country:GB",
@@ -17,8 +15,6 @@ var geocodeParams = {
     // "region": "uk"
 };
 
-
-
 exports.createNewUser = async (req, res) => {
     try {
         const user = new User({
@@ -26,6 +22,7 @@ exports.createNewUser = async (req, res) => {
             email: req.body.email,
             phone_number: req.body.phone_number,
             username: req.body.username,
+            isAdminCreated: req.body.isAdminCreated,
             location: {
                 street: req.body.street,
                 city: req.body.city,
