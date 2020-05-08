@@ -10,6 +10,14 @@ let ItemSchema = new Schema({
         type: Number,
         required: true,
         min: [1, 'Quantity can not be less then 1.']
+    },
+    price: {
+        type: Number,
+        required: true
+    },
+    total: {
+        type: Number,
+        required: true,
     }
 }, {
     timestamps: true
@@ -22,7 +30,12 @@ const CartSchema = new Schema({
         ref: "User",
     },
 
-    items: [ItemSchema]
+    items: [ItemSchema],
+
+    subTotal: {
+        default: 0,
+        type: Number
+    }
 }, {
     timestamps: true
 })
