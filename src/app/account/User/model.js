@@ -29,14 +29,13 @@ const userSchema = new Schema({
     default: false,
   },
 
-  //this is for reset password
+  // ---------- this is for reset password---------
   resetPasswordToken: {
     type: String
   },
   resetPasswordExpirationDate: {
     type: Date
   },
-  //this is for reset password
 
   username: {
     type: String,
